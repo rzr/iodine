@@ -1,0 +1,90 @@
+# iodine po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the iodine package.
+#
+# Changes:
+#   - Initial translation
+#       Francisco Javier Cuadrado <fcocuadrado@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine 0.5.2-5\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2010-05-21 19:08+0100\n"
+"Last-Translator: Francisco Javier Cuadrado <fcocuadrado@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "¿Se debería iniciar iodined (servidor) en el arranque?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr "Puede configurar aquí si quiere que iodined se inicie en el arranque."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Opciones de iodined (servidor):"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Necesita indicar los parámetros necesarios para iodined, vea iodined(8) para "
+"la ayuda. Por ejemplo: 10.0.0.1 tunel.midominio.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Contraseña de iodined (servidor):"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Introduzca la contraseña que iodined utiliza al iniciarse. Los clientes la "
+"deben utilizar al conectarse. Esta contraseña se almacenará en el archivo de "
+"texto «/etc/default/iodine»."

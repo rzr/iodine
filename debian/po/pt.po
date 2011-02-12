@@ -1,0 +1,69 @@
+# translation of iodine to Portuguese
+# Copyright (C) 207 Américo Monteiro
+# This file is distributed under the same license as the iodine package.
+#
+# Américo Monteiro <a_monteiro@netcabo.pt>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine_0.4.0-2_templates\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2007-07-13 20:16+0100\n"
+"Last-Translator: Américo Monteiro <a_monteiro@netcabo.pt>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "Deverá o iodined (servidor) arrancar no arranque da máquina?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr ""
+"Se você quer o iodined seja iniciado com o arranque da máquina, você pode "
+"configurar esse comportamento aqui."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Opções para iodined (servidor):"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Você precisa indicar os argumentos necessários ao iodined; veja iodined(8) "
+"para ajuda. Exemplo: 10.0.0.1 tunnel.meudominio.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Password para o iodined (servidor):"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Insira a password que o iodined usa no arranque. Ela terá que ser usada "
+"pelos clientes ao estabelecerem ligação. Esta password será guardada em "
+"texto simples em /etc/default/iodine."

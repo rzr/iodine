@@ -1,0 +1,20 @@
+Template: iodine/start_daemon
+Type: boolean
+Default: false
+_Description: Should iodined (server) start on boot?
+ If you want iodined to be started at boot time you can set this behaviour here.
+
+Template: iodine/daemon_options
+Type: string
+#flag:comment:2
+# TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+_Description: Options to iodined (server):
+ You need to give the necessary arguments to iodined; see iodined(8) for help.
+ Example: 10.0.0.1 tunnel.mydomain.example
+
+Template: iodine/daemon_password
+Type: password
+_Description: Password for iodined (server):
+ Enter the password iodined uses at startup. It has to be used by clients
+ when connecting.
+ This password will be stored in plain text in /etc/default/iodine.

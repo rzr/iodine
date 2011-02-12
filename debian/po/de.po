@@ -1,0 +1,67 @@
+# German translation of iodine templates
+# Helge Kreutzmann <debian@helgefjell.de>, 2007
+# This file is distributed under the same license as the iodine package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine 0.4.0-1\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2007-07-16 09:23+0200\n"
+"Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "Soll der Iodined (Server) beim Systemstart auch gestartet werden?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr ""
+"Falls Sie möchten, dass zum Systemstartzeitpunkt auch Iodined gestartet "
+"wird, stellen Sie dies hier ein."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Optionen für Iodined (Server):"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Sie müssen die notwendigen Argumente an Iodined übergeben; lesen Sie "
+"iodined(8) für Hilfe. Beispiel: 10.0.0.1 tunnel.mydomain.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Passwort für Iodined (Server):"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Geben Sie das Passwort ein, das Iodined beim Starten verwendet. Es muss von "
+"Clients beim Verbindungsaufbau verwendet werden. Dieses Passwort wird im "
+"Klartext in /etc/default/iodine gespeichert."

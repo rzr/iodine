@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+
+include /usr/share/hardening-includes/hardening.make
+export CFLAGS += $(HARDENING_CFLAGS)
+export LDFLAGS += $(HARDENING_LDFLAGS)
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	debconf-updatepo
+	dh_auto_clean
+
+override_dh_auto_build:
+	dh_auto_build
+	[ -x $(CURDIR)/debian/iodine-client-start ] || chmod +x $(CURDIR)/debian/iodine-client-start
+	help2man --output=$(CURDIR)/debian/iodine-client-start.8 \
+		--no-info --section=8 --name="start an iodine IPv4-over-DNS tunnel" \
+		$(CURDIR)/debian/iodine-client-start
+
+override_dh_auto_install:
+	dh_auto_install -- DESTDIR=$(TMP) prefix=/usr
+
+override_dh_installinit:
+	dh_installinit --name=iodined
+
+override_dh_installlogcheck:
+	dh_installlogcheck
+	mv $(TMP)/etc/logcheck/ignore.d.server/iodine $(TMP)/etc/logcheck/ignore.d.server/iodined

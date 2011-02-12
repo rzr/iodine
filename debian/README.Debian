@@ -1,0 +1,13 @@
+iodine for Debian
+-----------------
+
+* Warning: both the client and the server need to use the same protocol
+  version; in practice that means that the 0.4.x, 0.5.x, and 0.6.x packages
+  are not compatible!
+
+* Please note that iodine(d) needs the tun kernel module.
+* Instruction for setting up the infrastructure (including delegating a new
+  subdomain) are included in /usr/share/doc/iodine/README.gz and in the
+  iodined(8) manpage.
+* /usr/sbin/iodine-client-start is a script for setting up a tunnel and
+  routing through it from the client side.

@@ -1,0 +1,7 @@
+iodine (0.6.0~rc1-1) unstable; urgency=low
+
+  This version introduces a new protocol version (00000502). Both server and
+  client need to use the same protocol version!
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 03 Jul 2010 19:03:26 +0200
+

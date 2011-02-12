@@ -1,0 +1,29 @@
+Description: *roff mistakes
+Origin: vendor
+Forwarded: no
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2010-07-03
+
+--- a/man/iodine.8
++++ b/man/iodine.8
+@@ -232,10 +232,10 @@
+ Implies the
+ .B -f
+ option.
+-On level 2 (-DD) or higher, DNS queries will be printed literally.
++On level 2 (\-DD) or higher, DNS queries will be printed literally.
+ When using Base128 upstream encoding, this is best viewed as
+ ISO Latin-1 text instead of (illegal) UTF-8.
+-This is easily done with : "LC_ALL=C luit iodined -DD ..."
++This is easily done with : "LC_ALL=C luit iodined \-DD ..."
+ (see luit(1)).
+ .TP
+ .B -m mtu
+@@ -327,7 +327,6 @@
+ for one. The
+ .B -P
+ option still has precedence.
+-.El
+ .SH SEE ALSO
+ The README file in the source distribution contains some more elaborate
+ information.

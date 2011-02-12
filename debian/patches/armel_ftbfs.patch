@@ -1,0 +1,52 @@
+Description: Rename struct user to struct _user in the code to avoid naming
+ conflict caused by including <sys/user.h> as part of the armel build. Fixes
+ FTBFS.
+Origin: Ubuntu
+Bug: http://dev.kryo.se/iodine/ticket/102
+Forwarded: yes
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2011-02-10
+
+--- a/src/user.c
++++ b/src/user.c
+@@ -33,7 +33,7 @@
+ #include "encoding.h"
+ #include "user.h"
+ 
+-struct user users[USERS];
++struct _user users[USERS];
+ 
+ int
+ init_users(in_addr_t my_ip, int netbits)
+@@ -58,7 +58,7 @@
+ 
+ 	maxusers = (1 << (32-netbits)) - 3; /* 3: Net addr, broadcast addr, iodined addr */
+ 	
+-	memset(users, 0, USERS * sizeof(struct user));
++	memset(users, 0, USERS * sizeof(struct _user));
+ 	for (i = 0; i < USERS; i++) {
+ 		in_addr_t ip;
+ 		users[i].id = i;
+--- a/src/user.h
++++ b/src/user.h
+@@ -33,7 +33,10 @@
+ #define QMEMDATA_LEN 15
+ /* Max advisable: 36/2 = 18. Total mem usage: QMEMDATA_LEN * USERS * 6 bytes */
+ 
+-struct user {
++/* Renamed to struct _user to avoid naming conflict with struct user found in <sys/user.h>
++ * which gets included in some builds (armel) */
++
++struct _user {
+ 	char id;
+ 	int active;
+ 	int disabled;
+@@ -73,7 +76,7 @@
+ #endif
+ };
+ 
+-extern struct user users[USERS];
++extern struct _user users[USERS];
+ 
+ int init_users(in_addr_t, int);
+ const char* users_get_first_ip();

@@ -1,0 +1,24 @@
+Source: iodine
+Section: net
+Priority: extra
+Maintainer: gregor herrmann <gregoa@debian.org>
+Uploaders: tony mancill <tmancill@debian.org>
+Build-Depends: debhelper (>= 7.0.50), po-debconf, help2man,
+ zlib1g-dev, check, hardening-includes
+Standards-Version: 3.9.1
+Homepage: http://code.kryo.se/iodine
+Vcs-Svn: http://svn.toastfreeware.priv.at/debian/iodine/trunk/
+Vcs-Browser: http://svn.toastfreeware.priv.at/wsvn/ToastfreewareDebian/iodine/trunk/
+
+Package: iodine
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, udev | makedev, adduser
+Suggests: iproute, ipcalc, dnsutils, fping, gawk
+Description: tool for tunneling IPv4 data through a DNS server
+ This is a piece of software that lets you tunnel IPv4 data through a DNS
+ server. This can be usable in different situations where internet access is
+ firewalled, but DNS queries are allowed.
+ .
+ iodine is similar to nstx but has password authentication, brings up the
+ tun interface automatically and lets the user specify the IP address as a
+ command line option.

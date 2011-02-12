@@ -1,0 +1,71 @@
+# translation of iodine_0.5.2-1_ru.po to Russian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Kozlov <yuray@komyakino.ru>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine 0.5.2-1\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2009-08-30 14:33+0400\n"
+"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "Запускать службу iodined (сервер) при включении компьютера?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr ""
+"Если вы хотите, чтобы iodined запускался при включении компьютера, ответьте "
+"утвердительно."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Параметры для iodined (сервера):"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Вам нужно указать необходимые параметры для iodined; см. iodined(8). Пример: "
+"10.0.0.1 tunnel.mydomain.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Пароль к iodined (серверу):"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Введите пароль к iodined, используемый при запуске. Он будет использоваться "
+"клиентами для подключения. Этот пароль хранится в нешифрованном виде в "
+"файле /etc/default/iodine."

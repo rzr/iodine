@@ -1,0 +1,35 @@
+Description: spelling mistake in the manpage
+Forwarded: no
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2010-07-03
+Origin: vendor
+
+--- a/man/iodine.8
++++ b/man/iodine.8
+@@ -139,7 +139,7 @@
+ Use this option to scale back upstream bandwidth in favor of downstream
+ bandwidth.
+ Also useful for DNS servers that perform unreliably when using full-length
+-hostnames, noticable when fragment size autoprobe returns very
++hostnames, noticeable when fragment size autoprobe returns very
+ different results each time.
+ .TP
+ .B -T dnstype
+@@ -218,7 +218,7 @@
+ .TP
+ .B -c
+ Disable checking the client IP address on all incoming requests.
+-By default, requests originating from non-matching IP adresses will be
++By default, requests originating from non-matching IP addresses will be
+ rejected, however this will cause problems when requests are routed
+ via a cluster of DNS servers.
+ .TP
+@@ -285,7 +285,7 @@
+ .B tunnel_ip[/netmask]
+ This is the server's ip address on the tun interface. The client will be
+ given the next ip number in the range. It is recommended to use the 
+-10.0.0.0 or 172.16.0.0 ranges. The default netmask is /27, can be overriden
++10.0.0.0 or 172.16.0.0 ranges. The default netmask is /27, can be overridden
+ by specifying it here. Using a smaller network will limit the number of
+ concurrent users.
+ .TP

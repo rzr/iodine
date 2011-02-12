@@ -1,0 +1,67 @@
+# Copyright (C) 2009 gregor herrmann <gregoa@debian.org>
+# This file is distributed under the same license as the iodine package.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine 0.5.2-2\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2009-11-07 14:26+0900\n"
+"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "システム起動時に iodined (サーバ) を開始しますか?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr ""
+"システム起動時に iodined を起動させたい場合は、ここでその設定をすることができ"
+"ます。"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "iodined (サーバ) のオプション:"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"iodined への必要な引数を指定しなければなりません。詳細は iodined(8) を参照し"
+"てください。例: 10.0.0.1 tunnel.mydomain.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "iodined (サーバ) のパスワード:"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"iodined が起動時に使うパスワードを入力してください。これは、クライアントが接"
+"続する際に使う必要があります。このパスワードは /etc/default/iodine に平文で保"
+"存されます。"

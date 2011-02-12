@@ -1,0 +1,67 @@
+# translation of iodine.po to swedish
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Martin Bagge <brother@bsnet.se>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: iodine\n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2008-11-02 05:04+0100\n"
+"Last-Translator: Martin Bagge <brother@bsnet.se>\n"
+"Language-Team: swedish <debian-l10n-swedish@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "Ska iodined (servern) startas vid systemets uppstart?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr "Du kan ange att iodined ska startas vid systemets uppstart här."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Alternativ för iodined (servern):"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Det finns argument som måste anges för iodined, läs mer i manualsidan för "
+"iodined(8). Exempelvis: 10.0.0.1 tunnel.mydomain.example"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Lösenord för iodined (servern):"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Ange lösenordet iodined ska använda vid uppstarten. Det ska användas av "
+"klienter som ansluter. Lösenordet kommer att sparas fullt läsbart i filen /"
+"etc/default/iodine."

@@ -1,0 +1,70 @@
+# Translation of iodine debconf templates to French
+# Copyright (C) 2007 Christian Perrier <bubulle@debian.org>
+# This file is distributed under the same license as the iodine package.
+#
+# Christian Perrier <bubulle@debian.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: iodine@packages.debian.org\n"
+"POT-Creation-Date: 2008-05-28 19:30+0200\n"
+"PO-Revision-Date: 2007-07-18 19:36+0200\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Should iodined (server) start on boot?"
+msgstr "Faut-il lancer le démon du serveur Iodine au démarrage ?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"If you want iodined to be started at boot time you can set this behaviour "
+"here."
+msgstr ""
+"Veuillez choisir si vous souhaitez lancer le démon du serveur Iodine au "
+"démarrage de la machine."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Options to iodined (server):"
+msgstr "Options du démon du serveur Iodine :"
+
+#. Type: string
+#. Description
+#. TRANSLATORS: please don't translate/change ".example" (RFC 2606)
+#: ../templates:2001
+msgid ""
+"You need to give the necessary arguments to iodined; see iodined(8) for "
+"help. Example: 10.0.0.1 tunnel.mydomain.example"
+msgstr ""
+"Veuillez indiquer les paramètres à passer au server Iodine (voir la page de "
+"manuel iodined(8) pour plus de détails). Par exemple : « 10.0.0.1 tunnel."
+"mydomain.example »."
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid "Password for iodined (server):"
+msgstr "Mot de passe pour le serveur Iodine :"
+
+#. Type: password
+#. Description
+#: ../templates:3001
+msgid ""
+"Enter the password iodined uses at startup. It has to be used by clients "
+"when connecting. This password will be stored in plain text in /etc/default/"
+"iodine."
+msgstr ""
+"Veuillez indiquer le mot de passe qu'utilisera le serveur au démarrage. Il "
+"sera utilisé par les clients lorsque ceux-ci se connecteront. Ce mot de "
+"passe sera conservé en clair dans /etc/default/iodine."

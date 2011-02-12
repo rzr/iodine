@@ -1,0 +1,36 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+getvalue() {
+	awk '/^'"$1"'=/ {sub("^'"$1"'=\"", ""); sub("\"$", ""); value=$0;} END {print value}' /etc/default/iodine
+}
+
+if [ -s /etc/default/iodine ] ; then
+	START_IODINED="$(getvalue START_IODINED)"
+	if [ -n "$START_IODINED" ] ; then
+		db_set iodine/start_daemon "$START_IODINED"
+	fi
+	IODINED_ARGS="$(getvalue IODINED_ARGS)"
+	if [ -n "$IODINED_ARGS" ] ; then
+		db_set iodine/daemon_options "$IODINED_ARGS"
+	fi
+	IODINED_PASSWORD="$(getvalue IODINED_PASSWORD)"
+	if [ -n "$IODINED_PASSWORD" ] ; then
+		db_set iodine/daemon_password "$IODINED_PASSWORD"
+	fi
+fi
+
+db_input medium iodine/start_daemon || true
+db_go
+
+db_get iodine/start_daemon
+START_DAEMON=$RET
+
+if [ "x$START_DAEMON" = "xtrue" ] ; then
+	db_input medium iodine/daemon_options || true
+	db_input medium iodine/daemon_password || true
+	db_go
+fi

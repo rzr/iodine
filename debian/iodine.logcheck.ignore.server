@@ -1,0 +1,2 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ iodined: accepted version for user #[[:digit:]]+ from [.[:digit:]]{7,15}$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ iodined: accepted password from user #[[:digit:]]+, given IP [.[:digit:]]{7,15}$

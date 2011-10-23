@@ -1,11 +1,9 @@
 #!/usr/bin/make -f
 
-include /usr/share/hardening-includes/hardening.make
-export CFLAGS += $(HARDENING_CFLAGS)
-export LDFLAGS += $(HARDENING_LDFLAGS)
-
 PACKAGE = $(shell dh_listpackages)
 TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+export DEB_BUILD_MAINT_OPTIONS := hardening=+pie,+bindnow
 
 %:
 	dh $@

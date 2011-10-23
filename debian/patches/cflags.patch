@@ -11,7 +11,7 @@ Last-Update: 2010-07-03
  LIBPATH = -L.
  LDFLAGS +=  -lz `sh osflags $(TARGETOS) link` $(LIBPATH)
 -CFLAGS += -c -g -Wall -D$(OS) -pedantic `sh osflags $(TARGETOS) cflags`
-+CFLAGS += -c -D$(OS) -pedantic `sh osflags $(TARGETOS) cflags`
++CFLAGS += -c -D$(OS) -pedantic `sh osflags $(TARGETOS) cflags` $(CPPFLAGS)
  
  all: stateos $(CLIENT) $(SERVER)
  
@@ -22,7 +22,7 @@ Last-Update: 2010-07-03
  CHECK_PATH = /usr/local
  LDFLAGS = -L$(CHECK_PATH)/lib -lcheck `../src/osflags link`
 -CFLAGS = -g -Wall -D$(OS) -I../src -I$(CHECK_PATH)/include -pedantic `../src/osflags cflags`
-+CFLAGS += -D$(OS) -I../src -I$(CHECK_PATH)/include -pedantic `../src/osflags cflags`
++CFLAGS += -D$(OS) -I../src -I$(CHECK_PATH)/include -pedantic `../src/osflags cflags` $(CPPFLAGS)
  
  all: $(TEST)
  	@LD_LIBRARY_PATH=${CHECK_PATH}/lib ./$(TEST)

@@ -1,3 +1,15 @@
+iodine (0.6.0~rc1-6) unstable; urgency=low
+
+  * New patch: cmdline-r-u.patch. Due to a missing "break", -r causes -u to
+    have no effect (client). Thanks to Pavel Pergamenshchik for the bug report
+    and the patch.
+    LP: #880508
+  * debian/{rules,control}: replace hardening-includes with the new
+    dpkg-dev/debhelper approach. Update cflags.patch to honour CPPFLAGS.
+  * Set Standards-Version to 3.9.2 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 23 Oct 2011 23:07:10 +0200
+
 iodine (0.6.0~rc1-5) unstable; urgency=low
 
   * Don't source /etc/default/iodine in config script but read out the values

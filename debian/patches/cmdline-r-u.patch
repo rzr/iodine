@@ -1,0 +1,18 @@
+Description: Pavel Pergamenshchik
+Origin: vendor
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/880508
+Forwarded: http://dev.kryo.se/iodine/ticket/108
+Author: Pavel Pergamenshchik <ppergame@gmail.com>
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2011-10-23
+
+--- a/src/iodine.c
++++ b/src/iodine.c
+@@ -185,6 +185,7 @@
+ 			break;
+ 		case 'r':
+ 			raw_mode = 0;
++			break;
+ 		case 'u':
+ 			username = optarg;
+ 			break;

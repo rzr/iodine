@@ -33,7 +33,7 @@
 #include "encoding.h"
 #include "user.h"
 
-struct _user users[USERS];
+struct user users[USERS];
 
 int
 init_users(in_addr_t my_ip, int netbits)
@@ -58,7 +58,7 @@ init_users(in_addr_t my_ip, int netbits)
 
 	maxusers = (1 << (32-netbits)) - 3; /* 3: Net addr, broadcast addr, iodined addr */
 	
-	memset(users, 0, USERS * sizeof(struct _user));
+	memset(users, 0, USERS * sizeof(struct user));
 	for (i = 0; i < USERS; i++) {
 		in_addr_t ip;
 		users[i].id = i;

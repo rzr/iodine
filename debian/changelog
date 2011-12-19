@@ -1,8 +1,10 @@
-iodine (0.6.0~rc1-6.0~rzr2) unstable; urgency=low
+iodine (0.6.0~rc1-7) unstable; urgency=low
 
-  * Non-maintainer upload.
+  [ Peter Eisentraut ]
+  * Add support for "status" action to init.d script
+    Closes: #652671
 
- -- Philippe Coval <rzr@gna.org>  Mon, 19 Dec 2011 09:20:58 +0100
+ -- gregor herrmann <gregoa@debian.org>  Mon, 19 Dec 2011 19:56:22 +0100
 
 iodine (0.6.0~rc1-6) unstable; urgency=low
 
@@ -346,3 +348,4 @@ iodine (0.3.4-1) unstable; urgency=low
   * Initial release.
 
  -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 26 Jan 2007 14:03:30 +0100
+

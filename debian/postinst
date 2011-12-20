@@ -22,12 +22,13 @@ set -e
 
 case "$1" in
     configure)
+	set +e #workaround
         # we need a tun device
         if [ ! -c /dev/net/tun ] && [ -x /dev/MAKEDEV ] ; then
             echo "Creating device /dev/net/tun ..."
             cd /dev
             ./MAKEDEV tun || true
-        fi 
+        fi
         # and we want a special user
         adduser --quiet --system --home /var/run/iodine iodine
         # generate /etc/default/iodine
@@ -45,6 +46,7 @@ IODINED_ARGS="$IODINED_ARGS"
 IODINED_PASSWORD="$IODINED_PASSWORD"
 EOF
         [ -e /etc/default/iodine ] && chmod 600 /etc/default/iodine
+	set -e
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

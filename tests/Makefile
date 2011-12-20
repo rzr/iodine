@@ -7,7 +7,7 @@ OS = `uname | tr "a-z" "A-Z"`
 
 CHECK_PATH = /usr/local
 LDFLAGS = -L$(CHECK_PATH)/lib -lcheck `../src/osflags link`
-CFLAGS = -g -Wall -D$(OS) -I../src -I$(CHECK_PATH)/include -pedantic `../src/osflags cflags`
+CFLAGS += -D$(OS) -I../src -I$(CHECK_PATH)/include -pedantic `../src/osflags cflags` $(CPPFLAGS)
 
 all: $(TEST)
 	@LD_LIBRARY_PATH=${CHECK_PATH}/lib ./$(TEST)

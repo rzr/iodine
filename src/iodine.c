@@ -185,6 +185,7 @@ main(int argc, char **argv)
 			break;
 		case 'r':
 			raw_mode = 0;
+			break;
 		case 'u':
 			username = optarg;
 			break;

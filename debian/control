@@ -4,8 +4,8 @@ Priority: extra
 Maintainer: gregor herrmann <gregoa@debian.org>
 Uploaders: tony mancill <tmancill@debian.org>
 Build-Depends: check,
- dpkg-dev (>= 1.16.1),
- debhelper (>= 8.9.4),
+ dpkg-dev,
+ debhelper,
  help2man,
  po-debconf,
  zlib1g-dev,

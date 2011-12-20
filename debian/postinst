@@ -3,6 +3,13 @@
 #
 # see: dh_installdeb(1)
 
+
+try_()
+{
+    $@ || echo "ignore: [$!] $@"
+}
+
+
 set -e
 
 . /usr/share/debconf/confmodule
@@ -29,13 +36,13 @@ case "$1" in
             ./MAKEDEV tun || true
         fi 
         # and we want a special user
-        adduser --quiet --system --home /var/run/iodine iodine
+        try_ adduser --quiet --system --home /var/run/iodine iodine
         # generate /etc/default/iodine
-        db_get iodine/start_daemon
+        try_ db_get iodine/start_daemon
         START_IODINED=$RET
-        db_get iodine/daemon_options
+        try_ db_get iodine/daemon_options
         IODINED_ARGS=$RET
-        db_get iodine/daemon_password
+        try_ db_get iodine/daemon_password
         IODINED_PASSWORD=$RET
         cat <<EOF > /etc/default/iodine
 # Default settings for iodine. This file is sourced from
@@ -44,7 +51,7 @@ START_IODINED="$START_IODINED"
 IODINED_ARGS="$IODINED_ARGS"
 IODINED_PASSWORD="$IODINED_PASSWORD"
 EOF
-        [ -e /etc/default/iodine ] && chmod 600 /etc/default/iodine
+        [ -e /etc/default/iodine ] && try_ chmod 600 /etc/default/iodine
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

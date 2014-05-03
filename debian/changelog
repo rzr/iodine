@@ -1,9 +1,9 @@
-iodine (0.0.0-0) UNRELEASED; urgency=medium
+iodine (0.0.0-0~rzr1) unstable; urgency=medium
 
   * TODO: remove on release 
     http://rzr.online.fr/q/snapshot
 
- -- Philippe Coval <rzr@gna.org>  Sat, 03 May 2014 20:30:24 +0200
+ -- Philippe Coval <rzr@gna.org>  Sat, 03 May 2014 21:55:14 +0200
 
 iodine (0.6.0~rc1-6) unstable; urgency=low
 
@@ -347,4 +347,3 @@ iodine (0.3.4-1) unstable; urgency=low
   * Initial release.
 
  -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 26 Jan 2007 14:03:30 +0100
-

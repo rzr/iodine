@@ -34,14 +34,3 @@ Description: tool for tunneling IPv4 data through a DNS server
  iodine is similar to nstx but has password authentication, brings up the
  tun interface automatically and lets the user specify the IP address as a
  command line option.
-
-Package: iodine-snapshot
-Architecture: all
-Section: sound
-Depends: iodine (= ${source:Version}), ${misc:Depends}
-Suggests: rzr
-Priority: extra
-Description: unreleased snapshot version
- TODO: Remove on issue and upgrade iodine
- http://rzr.online.fr/q/snapshot#iodine Feedback welcome
-
